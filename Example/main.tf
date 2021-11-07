@@ -4,8 +4,8 @@ provider "aws" {
 
 resource "aws_instance" "sample" {
   ami                    = "ami-0dc863062bc04e1de"
-  instance_type          = "t3.micro"
-  vpc_security_group_ids = [aws_security_group.allow_sample.id, "sg-0bcf4abee87c39a2d"]
+  instance_type          = "t2.micro"
+  vpc_security_group_ids = [aws_security_group.allow_sample.id, "sg-0238d5e157df41b42"]
 
   tags = {
     Name = "sample"

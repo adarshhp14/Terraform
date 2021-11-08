@@ -12,7 +12,6 @@ terraform {
 
 module "ec2" {
   source = "./ec2"
-  SGID = module.sg.SGID
 }
 
 module "sg" {
